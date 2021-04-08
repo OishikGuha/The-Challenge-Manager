@@ -2,8 +2,11 @@ import discord
 from discord.ext import commands
 import requests
 import json
+import os
 
 client = commands.Bot(command_prefix=">")
+
+token = os.environ['CHALLENGEMANAGER_TOKEN']
 
 def get_quote():
     response = requests.get("https://zenquotes.io/api/random")
@@ -28,4 +31,4 @@ async def on_message(message):
 async def hello(ctx):
     await ctx.send("Hi")
 
-client.run("ODI5NzEzMzg5NDM3MzIxMjY2.YG8Izw.wqTXvm4mHPPuACkptL2ANqhxflE")
+client.run(token)
