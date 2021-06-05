@@ -211,4 +211,4 @@ async def prefix_error_handler(ctx, error):
     await ctx.send(f"```{error}```")
 
 
-client.run()
+client.run(os.getenv("TCM_TOKEN"))
