@@ -1,1 +1,1 @@
-worker: PointMaster/main.py
+worker: main.py
