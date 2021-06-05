@@ -5,8 +5,8 @@ from discord.ext import commands
 import requests
 import json, pickle
 
-prefix = "get help"
 
+prefix = "get help"
 
 def get_prefix(client, message): 
     global prefix
@@ -210,5 +210,7 @@ async def prefix(ctx, prefix):
 async def prefix_error_handler(ctx, error):
     await ctx.send(f"```{error}```")
 
+TOKEN = os.environ.get('TCM_TOKEN')
+print(TOKEN)
 
-client.run(os.getenv('TCM_TOKEN'))
+client.run(TOKEN)

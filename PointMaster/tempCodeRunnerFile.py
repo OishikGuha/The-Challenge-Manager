@@ -1,1 +1,1 @@
-sta
+help
