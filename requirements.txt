@@ -1,5 +1,3 @@
-
-random
 discord.py
 requests
 json
