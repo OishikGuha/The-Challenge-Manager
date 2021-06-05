@@ -1,0 +1,6 @@
+os
+random
+discord.py
+requests
+json
+pickle
