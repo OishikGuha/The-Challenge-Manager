@@ -211,4 +211,4 @@ async def prefix_error_handler(ctx, error):
     await ctx.send(f"```{error}```")
 
 
-client.run("ODI5NzEzMzg5NDM3MzIxMjY2.YG8Izw.dVb1Q4O_biBunhva3GfvUBENnr8")
+client.run()
