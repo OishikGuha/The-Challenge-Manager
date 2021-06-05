@@ -1,0 +1,1 @@
+worker: PointMaster/main.py
